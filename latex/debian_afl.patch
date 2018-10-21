@@ -1,0 +1,12 @@
+--- debian/rules	2018-10-21 10:07:16.927393062 +0000
++++ debian/rules.mod	2018-10-21 10:00:25.579012531 +0000
+@@ -7,6 +7,9 @@
+ 
+ SHELL=/bin/bash
+ 
++CC=afl-gcc
++CXX=afl-g++
++
+ build: build-arch build-indep
+ build-arch: build-stamp
+ build-indep: build-stamp
